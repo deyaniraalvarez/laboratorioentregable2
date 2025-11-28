@@ -1,0 +1,57 @@
+/* styles.css - estilos del laboratorio */
+:root{
+  --primario: #7b61ff;
+  --secundario: #6fe3ff;
+  --fondo: #ffffff;
+  --texto: #222;
+  --card-bg: #f7f7fb;
+}
+
+*{box-sizing: border-box;}
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+  line-height: 1.5;
+  padding: 24px;
+}
+
+.site-header{
+  border-bottom: 4px solid var(--primario);
+  padding-bottom: 12px;
+  margin-bottom: 18px;
+}
+
+#titulo-principal{
+  font-size: 1.6rem;
+  margin: 0;
+  color: var(--primario);
+}
+
+.contenido{
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr;
+  max-width: 900px;
+}
+
+.card{
+  background: var(--card-bg);
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card-titulo{
+  margin-top: 0;
+  color: var(--primario);
+}
+
+.site-footer{
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  color: #666;
+}
